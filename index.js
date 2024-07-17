@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add this function to your existing JavaScript
   function updatePageButtons() {
     pageButtonsContainer.innerHTML = "";
-    const maxVisibleButtons = window.innerWidth < 768 ? 3 : 5;
+    const maxVisibleButtons = window.innerWidth < 768 ? 2 : 4;
     const halfVisible = Math.floor(maxVisibleButtons / 2);
     let startPage = Math.max(currentPage - halfVisible, 1);
     let endPage = Math.min(startPage + maxVisibleButtons - 1, totalPages);
